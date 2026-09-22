@@ -1,7 +1,7 @@
 [project]
 name = "purpygent"
 version = "0.1.0"
-description = "Add your description here"
+description = "Build and run a pure Python agent against oMLX"
 readme = "README.md"
 authors = [
     { name = "blitterated", email = "blitterated@proton.me" }
