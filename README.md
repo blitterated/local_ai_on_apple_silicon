@@ -59,4 +59,12 @@ Resolved 16 packages in 75ms
  ```
 
 
+## Run the project
 
+```sh
+uv run purpygent
+```
+
+```text
+An AI agent is a computer system that acts autonomously, making decisions and taking actions based on its programming, learning, and interactions with its environment, often with the goal of achieving a specific objective or goal.
+```
