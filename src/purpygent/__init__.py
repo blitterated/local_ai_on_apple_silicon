@@ -5,7 +5,7 @@ from openai import OpenAI
 def main() -> None:
     key_path = "API/oMLX/api_key"
     api_key = get_api_key(key_path)
-    step1(api_key)
+    step_1__single_api_call(api_key)
 
 
 def get_api_key(key_path) -> String:
@@ -24,7 +24,7 @@ def get_api_key(key_path) -> String:
         raise RuntimeError(f"gopass failed for '{key_path}': {e.stderr.strip()}")
 
 
-def step1(api_key) -> None:
+def step_1__single_api_call(api_key) -> None:
     client = OpenAI(
         base_url="http://127.0.0.1:8000/v1",
         api_key=api_key
