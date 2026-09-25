@@ -11,8 +11,8 @@ dependencies = [
     "openai>=3.18.0",
 ]
 
-[project.scripts]
-purpygent = "purpygent:main"
+#[project.scripts]
+#purpygent = "purpygent:main"
 
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]
