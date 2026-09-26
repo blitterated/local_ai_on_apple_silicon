@@ -43,7 +43,7 @@ messages=[
 
 while True:
     response = client.chat.completions.create(
-        model="Llama-3.2-3B-Instruct-8bit",
+        model="Qwen3.5-9B-MLX-8bit",
         messages=messages,
         tools=TOOL_SCHEMAS,
     )
