@@ -11,8 +11,11 @@ client = OpenAI(
 
 
 def read_file(path):
-    with open (path, "r", encoding="utf-8") as f:
-        return f.read()
+    try:
+        with open (path, "r", encoding="utf-8") as f:
+            return f.read()
+    except FileNotFoundError:
+        return f"File {path} not found."
 
 
 TOOL_SCHEMAS = [
@@ -37,7 +40,7 @@ TOOL_SCHEMAS = [
 
 
 messages=[
-    {"role": "user", "content": "What is inside step_3_notes.txt? Summarize it in one line."},
+    {"role": "user", "content": "What is inside step_3_notes.md? Summarize it in one line."},
 ]
 
 
