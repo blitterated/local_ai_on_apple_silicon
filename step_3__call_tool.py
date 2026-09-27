@@ -40,7 +40,8 @@ TOOL_SCHEMAS = [
 
 
 messages=[
-    {"role": "user", "content": "What is inside step_3_notes.md? Summarize it in one line."},
+    #{"role": "user", "content": "What is inside step_3_notes.md? Summarize it in one line."},
+    {"role": "user", "content": "What is inside step_3_notes.md, step_3_foo.md, and step_3_bar.md? Summarize it in one line."},
 ]
 
 
