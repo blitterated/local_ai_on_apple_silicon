@@ -2,7 +2,7 @@ import subprocess
 
 KEY_PATH = "API/oMLX/api_key"
 
-def get_api_key() -> String:
+def get_api_key() -> str:
     try:
         result = subprocess.run(
             ["gopass", "show", "-o", KEY_PATH],
@@ -15,4 +15,4 @@ def get_api_key() -> String:
         return api_key
 
     except subprocess.CalledProcessError as e:
-        raise RuntimeError(f"gopass failed for '{key_path}': {e.stderr.strip()}")
+        raise RuntimeError(f"gopass failed for '{KEY_PATH}': {e.stderr.strip()}")
